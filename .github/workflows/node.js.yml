@@ -28,6 +28,7 @@ jobs:
         cache: 'npm'
         cache-dependency-path: my-app/package-lock.json
         persist-credentials: false
+    - run: cd my-app    
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
